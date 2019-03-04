@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BBSModular/BBSModular.iml" filepath="$PROJECT_DIR$/BBSModular/BBSModular.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Feign/Feign.iml" filepath="$PROJECT_DIR$/Feign/Feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/OPM-System.iml" filepath="$PROJECT_DIR$/.idea/OPM-System.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Eureka-Server/eureka-server.iml" filepath="$PROJECT_DIR$/Eureka-Server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MusicModular/musicmodular.iml" filepath="$PROJECT_DIR$/MusicModular/musicmodular.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UserModular/usermodular.iml" filepath="$PROJECT_DIR$/UserModular/usermodular.iml" />
     </modules>
   </component>
 </project>

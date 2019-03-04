@@ -1,7 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b0dad21-6c28-4096-8a7a-7c862c36315b" name="Default Changelist" comment="" />
+    <list default="true" id="1b0dad21-6c28-4096-8a7a-7c862c36315b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_1_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/maven_wrapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/maven_wrapper1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/maven_wrapper2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/controller/ArticleCommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/controller/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/dao/ArticleCommentRepositoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/dao/ArticleRepositoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/domain/ArticleCommentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/domain/ArticleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/service/ArticleCommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/service/ArticleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/service/impl/ArticleCommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/util/ResultDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/util/ResultDtoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceArticle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceArticleComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceMusic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceMusicComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/util/ResultDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/util/ResultDtoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/ArticleCommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/MusicCommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/MusicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Feign/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/FeignApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/FeignApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feign/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Feign/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/controller/MusicCommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/controller/MusicCommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/controller/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/controller/MusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/MusicCommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/MusicCommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/MusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/MusicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/impl/MusicCommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/impl/MusicCommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/impl/MusicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/impl/MusicServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicModular/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/MusicModular/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserModular/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserModular/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/UserModularApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/UserModularApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/dao/UserRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/dao/UserRepositoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/domain/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/domain/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserModular/src/main/resources/Config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserModular/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserModular/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/Eureka-Server/target/" />
+    <ignored path="$PROJECT_DIR$/MusicModular/target/" />
+    <ignored path="$PROJECT_DIR$/UserModular/target/" />
+    <ignored path="$PROJECT_DIR$/Feign/target/" />
+    <ignored path="$PROJECT_DIR$/Ribbon/target/" />
+    <ignored path="$PROJECT_DIR$/BBSModular/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,22 +92,150 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1177430712">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="8" />
+          <entry key="java" value="175" />
+          <entry key="properties" value="22" />
+          <entry key="xml" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="8" />
+          <entry key="JAVA" value="175" />
+          <entry key="Properties" value="22" />
+          <entry key="XML" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="1" />
+          <entry key="java" value="5438" />
+          <entry key="properties" value="162" />
+          <entry key="txt" value="12" />
+          <entry key="xml" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="5438" />
+          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="Properties" value="162" />
+          <entry key="XML" value="17" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/UserModularApplication.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/ArticleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="525">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1331#1332#0" expanded="true" />
+                <element signature="e#1391#1392#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/controller/ArticleCommentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="755">
+              <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/UserModular" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Eureka-Server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/Eureka-Server/src/main/java/zucc/hzq/eurekaserver/EurekaServerApplication.java" />
+        <option value="$PROJECT_DIR$/UserModular/pom.xml" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/FeignApplication.java" />
+        <option value="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/UserModularApplication.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/util/ResultDto.java" />
+        <option value="$PROJECT_DIR$/Feign/pom.xml" />
+        <option value="$PROJECT_DIR$/Ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/Ribbon/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/Ribbon/src/main/java/zucc/hzq/ribbon/RibbonApplication.java" />
+        <option value="$PROJECT_DIR$/Ribbon/src/main/java/zucc/hzq/ribbon/service/UserModularService.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/util/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/util/ResultDtoFactory.java" />
+        <option value="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/service/UserService.java" />
+        <option value="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/MusicService.java" />
+        <option value="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/MusicCommentService.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceUser.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/UserController.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/MusicController.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceMusic.java" />
+        <option value="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/controller/MusicController.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceMusicComment.java" />
+        <option value="$PROJECT_DIR$/MusicModular/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/controller/MusicCommentController.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/UserModular/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/domain/UserDto.java" />
+        <option value="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/impl/MusicServiceImpl.java" />
+        <option value="$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/impl/MusicCommentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/util/ResultDto.java" />
+        <option value="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/domain/ArticleDto.java" />
+        <option value="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/domain/articleCommentDto.java" />
+        <option value="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/domain/ArticleCommentDto.java" />
+        <option value="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/service/ArticleService.java" />
+        <option value="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/dao/ArticleRepositoryDao.java" />
+        <option value="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/service/impl/ArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/dao/UserRepositoryDao.java" />
+        <option value="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/service/ArticleCommentService.java" />
+        <option value="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/dao/ArticleCommentRepositoryDao.java" />
+        <option value="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/service/impl/ArticleCommentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/controller/ArticleController.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceArticle.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceArticleComment.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/MusicCommentController.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/ArticleController.java" />
+        <option value="$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/ArticleCommentController.java" />
+        <option value="$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/controller/ArticleCommentController.java" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -51,29 +243,175 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1294" />
-    <option name="height" value="1407" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="musicmodular" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="musicmodular" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="UserModular" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="UserModular" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="482" />
+    <option name="y" value="-10" />
+    <option name="width" value="1449" />
+    <option name="height" value="781" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="OPM-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPM-System" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OPM-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPM-System" type="462c0819:PsiDirectoryNode" />
+              <item name="BBSModular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OPM-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPM-System" type="462c0819:PsiDirectoryNode" />
+              <item name="BBSModular" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OPM-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPM-System" type="462c0819:PsiDirectoryNode" />
+              <item name="BBSModular" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OPM-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPM-System" type="462c0819:PsiDirectoryNode" />
+              <item name="BBSModular" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OPM-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPM-System" type="462c0819:PsiDirectoryNode" />
+              <item name="BBSModular" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bbsmodular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OPM-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPM-System" type="462c0819:PsiDirectoryNode" />
+              <item name="BBSModular" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bbsmodular" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OPM-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPM-System" type="462c0819:PsiDirectoryNode" />
+              <item name="Feign" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OPM-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPM-System" type="462c0819:PsiDirectoryNode" />
+              <item name="Feign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OPM-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPM-System" type="462c0819:PsiDirectoryNode" />
+              <item name="Feign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OPM-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPM-System" type="462c0819:PsiDirectoryNode" />
+              <item name="Feign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OPM-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPM-System" type="462c0819:PsiDirectoryNode" />
+              <item name="Feign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="feign" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OPM-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPM-System" type="462c0819:PsiDirectoryNode" />
+              <item name="Feign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="feign" type="462c0819:PsiDirectoryNode" />
+              <item name="zcontroller" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/UserModular" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551700099453" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SpringCloudLearning-master/sc-f-chapter5" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.37126437" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="zucc.hzq.feign" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\IDEAWorkspace\OPM-System\OPM-System\BBSModular\src\main\java\hzq\zucc\bbsmodular\util" />
+      <recent name="C:\IDEAWorkspace\OPM-System\OPM-System\Feign\src\main\java\zucc\hzq\feign\util" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -87,6 +425,58 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Spring Boot.MusicmodularApplication">
+    <configuration name="BbsModularApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BBSModular" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hzq.zucc.bbsmodular.BbsModularApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="zucc.hzq.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Feign" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="zucc.hzq.feign.FeignApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MusicmodularApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="musicmodular" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="zucc.hzq.musicmodular.MusicmodularApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RibbonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Ribbon" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="zucc.hzq.ribbon.RibbonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserModularApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="usermodular" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="zucc.hzq.usermodular.UserModularApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.MusicmodularApplication" />
+      <item itemvalue="Spring Boot.UserModularApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.FeignApplication" />
+      <item itemvalue="Spring Boot.RibbonApplication" />
+      <item itemvalue="Spring Boot.BbsModularApplication" />
+    </list>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -98,42 +488,64 @@
       <option name="presentableId" value="Default" />
       <updated>1550411970860</updated>
       <workItem from="1550411972191" duration="54000" />
+      <workItem from="1551361521893" duration="3413000" />
+      <workItem from="1551446908500" duration="3708000" />
+      <workItem from="1551451866566" duration="332000" />
+      <workItem from="1551491946883" duration="10558000" />
+      <workItem from="1551511007715" duration="1415000" />
+      <workItem from="1551524888453" duration="11137000" />
+      <workItem from="1551579896690" duration="14983000" />
+      <workItem from="1551662910855" duration="12872000" />
     </task>
+    <task id="LOCAL-00001" summary="微服务架构初次尝试">
+      <created>1551365547501</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551365547502</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54000" />
+    <option name="totallyTimeSpent" value="58472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14864865" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24085851" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.399841" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Spring" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3298887" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3290938" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.1291733" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3298887" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,13 +554,563 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/UserModular" />
+    </ignored-roots>
+    <MESSAGE value="微服务架构初次尝试" />
+    <option name="LAST_COMMIT_MESSAGE" value="微服务架构初次尝试" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/UserModularApplication.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        <state relative-caret-position="264">
+          <caret line="762" selection-start-line="762" selection-end-line="762" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/UserModular/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="52" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ribbon/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/Ribbon/src/main/java/zucc/hzq/ribbon/RibbonApplication.java" />
+    <entry file="file://$PROJECT_DIR$/Ribbon/src/main/java/zucc/hzq/ribbon/service/UserModularService.java" />
+    <entry file="file://$PROJECT_DIR$/Ribbon/src/main/java/zucc/hzq/ribbon/controller/UserModularController.java" />
+    <entry file="file://$PROJECT_DIR$/Ribbon/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/Feign/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/util/ResultDtoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/util/ResultDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/MusicCommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MusicModular/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eureka-Server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feign/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/FeignApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserModular/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceMusicComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/domain/MusicCommentDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1184">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/domain/MusicDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/MusicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/impl/MusicServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1533">
+          <caret line="84" column="43" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/service/impl/MusicCommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/controller/MusicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MusicModular/src/main/java/zucc/hzq/musicmodular/controller/MusicCommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/util/ResultDtoFactory.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/util/ResultDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/domain/UserDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="e#2060#2061#0" expanded="true" />
+            <element signature="e#2099#2100#0" expanded="true" />
+            <element signature="e#2134#2135#0" expanded="true" />
+            <element signature="e#2167#2168#0" expanded="true" />
+            <element signature="e#2217#2218#0" expanded="true" />
+            <element signature="e#2261#2262#0" expanded="true" />
+            <element signature="e#2296#2297#0" expanded="true" />
+            <element signature="e#2329#2330#0" expanded="true" />
+            <element signature="e#2379#2380#0" expanded="true" />
+            <element signature="e#2423#2424#0" expanded="true" />
+            <element signature="e#2458#2459#0" expanded="true" />
+            <element signature="e#2491#2492#0" expanded="true" />
+            <element signature="e#2541#2542#0" expanded="true" />
+            <element signature="e#2585#2586#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/domain/ArticleDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+            <element signature="e#1612#1613#0" expanded="true" />
+            <element signature="e#1646#1647#0" expanded="true" />
+            <element signature="e#1680#1681#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
+            <element signature="e#1857#1858#0" expanded="true" />
+            <element signature="e#1902#1903#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#1973#1974#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2046#2047#0" expanded="true" />
+            <element signature="e#2084#2085#0" expanded="true" />
+            <element signature="e#2116#2117#0" expanded="true" />
+            <element signature="e#2147#2148#0" expanded="true" />
+            <element signature="e#2192#2193#0" expanded="true" />
+            <element signature="e#2232#2233#0" expanded="true" />
+            <element signature="e#2267#2268#0" expanded="true" />
+            <element signature="e#2300#2301#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2394#2395#0" expanded="true" />
+            <element signature="e#2429#2430#0" expanded="true" />
+            <element signature="e#2462#2463#0" expanded="true" />
+            <element signature="e#2512#2513#0" expanded="true" />
+            <element signature="e#2556#2557#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2624#2625#0" expanded="true" />
+            <element signature="e#2674#2675#0" expanded="true" />
+            <element signature="e#2718#2719#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/dao/ArticleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/domain/ArticleCommentDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="e#1152#1153#0" expanded="true" />
+            <element signature="e#1199#1200#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+            <element signature="e#1353#1354#0" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1425#1426#0" expanded="true" />
+            <element signature="e#1454#1455#0" expanded="true" />
+            <element signature="e#1495#1496#0" expanded="true" />
+            <element signature="e#1531#1532#0" expanded="true" />
+            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#1595#1596#0" expanded="true" />
+            <element signature="e#1641#1642#0" expanded="true" />
+            <element signature="e#1679#1680#0" expanded="true" />
+            <element signature="e#1711#1712#0" expanded="true" />
+            <element signature="e#1742#1743#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
+            <element signature="e#1827#1828#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="e#1895#1896#0" expanded="true" />
+            <element signature="e#1945#1946#0" expanded="true" />
+            <element signature="e#1989#1990#0" expanded="true" />
+            <element signature="e#2024#2025#0" expanded="true" />
+            <element signature="e#2057#2058#0" expanded="true" />
+            <element signature="e#2107#2108#0" expanded="true" />
+            <element signature="e#2151#2152#0" expanded="true" />
+            <element signature="e#2186#2187#0" expanded="true" />
+            <element signature="e#2219#2220#0" expanded="true" />
+            <element signature="e#2269#2270#0" expanded="true" />
+            <element signature="e#2313#2314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/dao/ArticleRepositoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/dao/UserRepositoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/service/impl/ArticleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="42" column="54" lean-forward="true" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/service/impl/ArticleCommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="29" column="52" lean-forward="true" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/dao/ArticleCommentRepositoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserModular/src/main/java/zucc/hzq/usermodular/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="42" />
+          <folding>
+            <element signature="e#1085#1086#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/service/ArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/service/ArticleCommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceMusic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceArticleComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/service/ServiceArticle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/MusicCommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/MusicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/controller/ArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/ArticleCommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feign/src/main/java/zucc/hzq/feign/zcontroller/ArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1331#1332#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBSModular/src/main/java/hzq/zucc/bbsmodular/controller/ArticleCommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>usermodular</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37126437" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>maven-wrapper</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

@@ -2,6 +2,7 @@ package zucc.hzq.usermodular.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @Auther: 何圳青
@@ -27,6 +28,12 @@ public class UserDto implements Serializable {
     private String userSex;
     @Column(name = "user_city", nullable = false)
     private String userCity;
+    @Column(name = "create_time", nullable = false)
+    private Date createTime;
+    @Column(name = "update_time", nullable = false)
+    private Date updateTime;
+    @Column(name = "delete_time", nullable = false)
+    private Date deleteTime;
 
     public int getUserId() {
         return userId;
@@ -74,5 +81,33 @@ public class UserDto implements Serializable {
 
     public void setUserCity(String userCity) {
         this.userCity = userCity;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public Date getDeleteTime() {
+        return deleteTime;
+    }
+
+    public void setDeleteTime(Date deleteTime) {
+        this.deleteTime = deleteTime;
     }
 }

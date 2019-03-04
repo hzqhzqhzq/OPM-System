@@ -17,4 +17,6 @@ public interface MusicCommentService {
 
     public ResultDto deleteComment(int commentId);
 
+    public ResultDto updateComment(MusicCommentDto musicComment);
+
 }

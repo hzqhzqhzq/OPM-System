@@ -10,5 +10,5 @@ package zucc.hzq.usermodular.dao;
  * @Modified By:
  */
 public interface UserRepositoryDao extends JpaRepository<UserDto, Long> {
-    public UserDto findByUserEmail(String Email);
+    UserDto findByUserEmail(String Email);
 }

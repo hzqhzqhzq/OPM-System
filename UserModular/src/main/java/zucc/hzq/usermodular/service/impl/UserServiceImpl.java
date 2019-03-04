@@ -8,6 +8,9 @@ import zucc.hzq.usermodular.service.UserService;
 import zucc.hzq.usermodular.util.ResultDto;
 import zucc.hzq.usermodular.util.ResultDtoFactory;
 
+import java.sql.Timestamp;
+import java.util.Date;
+
 /**
  * @Auther: 何圳青
  * @Date: Created in 19:44 2019/1/28
@@ -19,6 +22,8 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepositoryDao userRepositoryDao;
+
+    private static Date date = new Date();
 
     @Override
     public ResultDto login(UserDto user) {
@@ -53,5 +58,37 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    @Override
+    public ResultDto getUserInfo(String userEmail) {
+        UserDto result = userRepositoryDao.findByUserEmail(userEmail);;
+        if (result == null) {
+            return ResultDtoFactory.toNack("没有该用户");
+        } else {
+            return ResultDtoFactory.toNack("获取用户信息成功", result);
+        }
+    }
+
+    @Override
+    public ResultDto updateUser(UserDto user) {
+        if (userRepositoryDao.findByUserEmail(user.getUserEmail()) == null) {
+            return ResultDtoFactory.toNack("没有该用户");
+        } else {
+            user.setCreateTime(new Timestamp(date.getTime()));
+            userRepositoryDao.save(user);
+            return ResultDtoFactory.toAck("更新用户信息成功", user);
+        }
+    }
+
+    @Override
+    public ResultDto deleteUser(String userEmail) {
+        UserDto user = userRepositoryDao.findByUserEmail(userEmail);
+        if (user == null) {
+            return ResultDtoFactory.toNack("没有该用户");
+        } else {
+            user.setDeleteTime(new Timestamp(date.getTime()));
+            userRepositoryDao.save(user);
+            return ResultDtoFactory.toAck("删除成功");
+        }
+    }
 
 }

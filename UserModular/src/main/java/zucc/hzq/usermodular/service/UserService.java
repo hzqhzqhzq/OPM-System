@@ -12,4 +12,7 @@ import zucc.hzq.usermodular.util.ResultDto;
 public interface UserService {
     public ResultDto login(UserDto user);
     public ResultDto register(UserDto user);
+    public ResultDto getUserInfo(String userEmail);
+    public ResultDto updateUser(UserDto user);
+    public ResultDto deleteUser(String userEmail);
 }

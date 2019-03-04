@@ -2,8 +2,10 @@ package zucc.hzq.musicmodular.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import zucc.hzq.musicmodular.domain.MusicDto;
 import zucc.hzq.musicmodular.service.MusicService;
 import zucc.hzq.musicmodular.util.ResultDto;
 import zucc.hzq.musicmodular.util.ResultDtoFactory;
@@ -17,7 +19,7 @@ import zucc.hzq.musicmodular.util.ResultDtoFactory;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/music")
+//@RequestMapping("/music")
 public class MusicController {
 
     @Autowired
@@ -26,6 +28,36 @@ public class MusicController {
     @RequestMapping("/getallmusic")
     public ResultDto getAllMusic() {
         return musicService.getAllMusic();
+    }
+
+    @RequestMapping("/getmusicbyid")
+    public ResultDto getMusicById(@RequestBody int songId) {
+        return musicService.getMusicById(songId);
+    }
+
+    @RequestMapping("/getmusicbyauthor")
+    public ResultDto getMusicByAuthor(@RequestBody int authorId) {
+        return musicService.getMusicByAuthorId(authorId);
+    }
+
+    @RequestMapping("/savemusic")
+    public ResultDto saveMusic(@RequestBody MusicDto music) {
+        return musicService.saveMusic(music);
+    }
+
+    @RequestMapping("/collection")
+    public ResultDto collectionMusic(@RequestBody int songId) {
+        return musicService.collectionMusic(songId);
+    }
+
+    @RequestMapping("/dislike")
+    public ResultDto dislikeMusic(@RequestBody int songId) {
+        return musicService.dislikeMusic(songId);
+    }
+
+    @RequestMapping("/deletemusic")
+    public ResultDto deleteMusic(@RequestBody int songId) {
+        return musicService.deleteMusic(songId);
     }
 
 }

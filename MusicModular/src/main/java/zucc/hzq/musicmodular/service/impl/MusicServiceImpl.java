@@ -8,6 +8,8 @@ import zucc.hzq.musicmodular.service.MusicService;
 import zucc.hzq.musicmodular.util.ResultDto;
 import zucc.hzq.musicmodular.util.ResultDtoFactory;
 
+import java.sql.Timestamp;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -22,6 +24,8 @@ public class MusicServiceImpl implements MusicService {
     @Autowired
     private MusicRepositoryDao musicRepositoryDao;
 
+    private static Date date = new Date();
+
     @Override
     public ResultDto getAllMusic() {
         List<MusicDto> returnMusic = musicRepositoryDao.findAll();
@@ -31,12 +35,22 @@ public class MusicServiceImpl implements MusicService {
 
     @Override
     public ResultDto getMusicById(int songId) {
-        return ResultDtoFactory.toAck("获取音乐成功！", musicRepositoryDao.findById(new Long((long)songId)));
+        Optional<MusicDto> music = musicRepositoryDao.findById(new Long((long)songId));
+        if (music == null){
+            return ResultDtoFactory.toNack("没有该音乐");
+        } else {
+            return ResultDtoFactory.toAck("获取音乐成功！", music);
+        }
     }
 
     @Override
     public ResultDto getMusicByAuthorId(int userId) {
-        return ResultDtoFactory.toAck("获取音乐成功！", musicRepositoryDao.findByAuthorId(userId));
+        Optional<MusicDto> music = musicRepositoryDao.findById(new Long((long)userId));
+        if (music == null){
+            return ResultDtoFactory.toNack("没有该音乐");
+        } else {
+            return ResultDtoFactory.toAck("获取音乐成功！", music);
+        }
     }
 
     @Override
@@ -61,5 +75,13 @@ public class MusicServiceImpl implements MusicService {
         music.get().setCollection(dislike + 1);
         musicRepositoryDao.save(music.get());
         return ResultDtoFactory.toAck("修改成功！", music.get());
+    }
+
+    @Override
+    public ResultDto deleteMusic(int songId) {
+        Optional<MusicDto> music = musicRepositoryDao.findById(new Long((long)songId));
+        music.get().setDeleteTime(new Timestamp(date.getTime()));
+        musicRepositoryDao.save(music.get());
+        return ResultDtoFactory.toAck("删除成功");
     }
 }

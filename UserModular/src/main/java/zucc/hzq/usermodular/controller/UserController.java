@@ -17,37 +17,40 @@ package zucc.hzq.usermodular.controller;
  */
 @RestController
 @CrossOrigin
-@RequestMapping("/user")
+//@RequestMapping("/user")
 public class UserController {
 
     @Autowired
     private UserService userService;
 
     @RequestMapping("/login")
-    public ResultDto login(HttpServletRequest request){
+    public ResultDto login(@RequestParam("user_email") String email, @RequestParam("user_password")String pwd){
         UserDto user = new UserDto();
 
-        user.setUserEmail(request.getParameter("user_email"));
-        user.setUserPassword(request.getParameter("user_password"));
+        user.setUserEmail(email);
+        user.setUserPassword(pwd);
 
         return userService.login(user);
     }
 
-//    public ResultDto getUser(HttpServletRequest request){
-//
-//    }
+    @RequestMapping("/getuserinfo")
+    public ResultDto getUser(@RequestParam("user_email") String email){
+        return userService.getUserInfo(email);
+    }
 
     @RequestMapping("/register")
-    public ResultDto register(@RequestBody UserDto user, HttpServletRequest request){
+    public ResultDto register(@RequestBody UserDto user){
         return userService.register(user);
     }
 
-    @ResponseBody
-    @RequestMapping(value = "/test")
-    public boolean test(HttpServletRequest request){
-        String email = request.getParameter("user_email");
-        System.out.print(email);
-        String resule = "aaa";
-        return true;
+    @RequestMapping("/updateuser")
+    public ResultDto updateUser(@RequestBody UserDto user){
+        return userService.updateUser(user);
     }
+
+    @RequestMapping("/deleteuser")
+    public ResultDto daleteUser(@RequestBody String email){
+        return userService.deleteUser(email);
+    }
+
 }

@@ -21,4 +21,6 @@ public interface MusicService {
     public ResultDto collectionMusic(int songId);
 
     public ResultDto dislikeMusic(int songId);
+
+    public ResultDto deleteMusic(int songId);
 }
