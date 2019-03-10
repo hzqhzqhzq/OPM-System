@@ -22,13 +22,13 @@ import java.util.Optional;
 public class ArticleCommentServiceImpl implements ArticleCommentService {
 
     @Autowired
-    private static ArticleCommentRepositoryDao articleCommentRepositoryDao;
+    private ArticleCommentRepositoryDao articleCommentRepositoryDao;
 
     private static Date date = new Date();
 
     @Override
     public ResultDto getCommentByArticle(int articleId) {
-        return ResultDtoFactory.toAck("获取成功", articleCommentRepositoryDao.findAllByDeleteTimeIsNotNullAndArticleId(articleId));
+        return ResultDtoFactory.toAck("获取成功", articleCommentRepositoryDao.findAllByDeleteTimeIsNullAndArticleId(articleId));
     }
 
     @Override
@@ -47,9 +47,9 @@ public class ArticleCommentServiceImpl implements ArticleCommentService {
 
     @Override
     public ResultDto deleteComment(int commentId) {
-        Optional<ArticleCommentDto> articleComment = articleCommentRepositoryDao.findById(new Long((long) commentId));
-        articleComment.get().setDeleteTime(new Timestamp(date.getTime()));
-        articleCommentRepositoryDao.save(articleComment.get());
+        ArticleCommentDto articleComment = articleCommentRepositoryDao.findByCommentId(commentId);
+        articleComment.setDeleteTime(new Timestamp(date.getTime()));
+        articleCommentRepositoryDao.save(articleComment);
         return ResultDtoFactory.toAck("删除成功");
     }
 }

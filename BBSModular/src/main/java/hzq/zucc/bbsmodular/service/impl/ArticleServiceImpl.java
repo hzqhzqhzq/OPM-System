@@ -23,7 +23,7 @@ import java.util.Optional;
 public class ArticleServiceImpl implements ArticleService {
 
     @Autowired
-    private static ArticleRepositoryDao articleRepositoryDao;
+    private ArticleRepositoryDao articleRepositoryDao;
 
     private static Date date = new Date();
 
@@ -35,7 +35,7 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public ResultDto getArticleByAuthor(int authorId) {
-        List<ArticleDto> result = articleRepositoryDao.findByAuthorId(authorId);
+        List<ArticleDto> result = articleRepositoryDao.findByUserId(authorId);
         return ResultDtoFactory.toAck("获取文章成功", result);
     }
 
@@ -55,8 +55,13 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public ResultDto deleteArticle(int articleId) {
-        Optional<ArticleDto> article = articleRepositoryDao.findById(new Long((int) articleId));
-        article.get().setDeleteTime(new Timestamp(date.getTime()));
-        return ResultDtoFactory.toAck("删除成功", article.get());
+        ArticleDto article = articleRepositoryDao.findByArticleId(articleId);
+        article.setDeleteTime(new Timestamp(date.getTime()));
+        return ResultDtoFactory.toAck("删除成功", article);
+    }
+
+    @Override
+    public ResultDto getArticleById(int articleId) {
+        return ResultDtoFactory.toAck("获取成功",articleRepositoryDao.findByArticleId(articleId));
     }
 }

@@ -12,5 +12,6 @@ import java.util.List;
  * @Modified By:
  */
 public interface ArticleCommentRepositoryDao extends JpaRepository<ArticleCommentDto, Long> {
-    List<ArticleCommentDto> findAllByDeleteTimeIsNotNullAndArticleId(int articleId);
+    List<ArticleCommentDto> findAllByDeleteTimeIsNullAndArticleId(int articleId);
+    ArticleCommentDto findByCommentId(int commentId);
 }

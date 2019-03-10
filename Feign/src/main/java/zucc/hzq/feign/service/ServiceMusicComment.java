@@ -3,6 +3,7 @@ package zucc.hzq.feign.service;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import zucc.hzq.feign.util.ResultDto;
 
 /**
@@ -15,7 +16,7 @@ import zucc.hzq.feign.util.ResultDto;
 public interface ServiceMusicComment {
 
     @RequestMapping("/getcommentbymusic")
-    public ResultDto getCommentByMusic(@RequestBody int songId);
+    public ResultDto getCommentByMusic(@RequestParam("song_id") int songId);
 
     @RequestMapping("/savecomment")
     public ResultDto saveComment(@RequestBody Object musicComment);

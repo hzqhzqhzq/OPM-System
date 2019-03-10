@@ -1,5 +1,6 @@
 package zucc.hzq.musicmodular.service;
 
+import org.springframework.web.multipart.MultipartFile;
 import zucc.hzq.musicmodular.domain.MusicDto;
 import zucc.hzq.musicmodular.util.ResultDto;
 
@@ -23,4 +24,8 @@ public interface MusicService {
     public ResultDto dislikeMusic(int songId);
 
     public ResultDto deleteMusic(int songId);
+
+    public ResultDto upFile(MultipartFile file);
+
+    ResultDto getBestMusic();
 }

@@ -2,10 +2,7 @@ package zucc.hzq.feign.zcontroller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import zucc.hzq.feign.service.ServiceArticle;
 import zucc.hzq.feign.util.ResultDto;
 
@@ -30,7 +27,7 @@ public class ArticleController {
     }
 
     @RequestMapping("/getarticlebyauthor")
-    public ResultDto getArticleByAuthor(@RequestBody int authorId){
+    public ResultDto getArticleByAuthor(@RequestParam("user_id") int authorId){
         return serviceArticle.getArticleByAuthor(authorId);
     }
 
@@ -45,7 +42,12 @@ public class ArticleController {
     }
 
     @RequestMapping("/deletearticle")
-    public ResultDto deleteArticle(@RequestBody int articleId){
+    public ResultDto deleteArticle(@RequestParam("user_id") int articleId){
         return serviceArticle.deleteArticle(articleId);
+    }
+
+    @RequestMapping("/getarticlebyid")
+    public ResultDto getArticleById(@RequestParam("article_id") int articleId){
+        return serviceArticle.getArticleById(articleId);
     }
 }

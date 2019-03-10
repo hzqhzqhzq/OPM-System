@@ -12,5 +12,6 @@ import java.util.List;
  * @Modified By:
  */
 public interface ArticleRepositoryDao extends JpaRepository<ArticleDto, Long> {
-    List<ArticleDto> findByAuthorId(int authorId);
+    List<ArticleDto> findByUserId(int authorId);
+    ArticleDto findByArticleId(int articleId);
 }

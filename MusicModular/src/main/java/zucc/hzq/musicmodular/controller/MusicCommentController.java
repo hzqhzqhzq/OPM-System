@@ -1,10 +1,7 @@
 package zucc.hzq.musicmodular.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import zucc.hzq.musicmodular.domain.MusicCommentDto;
 import zucc.hzq.musicmodular.service.MusicCommentService;
 import zucc.hzq.musicmodular.util.ResultDto;
@@ -24,7 +21,7 @@ public class MusicCommentController {
     private MusicCommentService musicCommentService;
 
     @RequestMapping("/getcommentbymusic")
-    public ResultDto getCommentByMusic(@RequestBody int songId){
+    public ResultDto getCommentByMusic(@RequestParam("song_id") int songId){
         return musicCommentService.getMusicCommentByMusicId(songId);
     }
 

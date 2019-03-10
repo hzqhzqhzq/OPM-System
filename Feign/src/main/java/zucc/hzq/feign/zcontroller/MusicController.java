@@ -1,10 +1,8 @@
 package zucc.hzq.feign.zcontroller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import zucc.hzq.feign.service.ServiceMusic;
 import zucc.hzq.feign.util.ResultDto;
 
@@ -28,13 +26,13 @@ public class MusicController {
     }
 
     @RequestMapping("/getmusicbyid")
-    public ResultDto getMusicById(@RequestBody int songId) {
-        return serviceMusic.getMusicById(songId);
+    public ResultDto getMusicById(@RequestParam(value = "song_id") int song_id) {
+        return serviceMusic.getMusicById(song_id);
     }
 
     @RequestMapping("/getmusicbyauthor")
-    public ResultDto getMusicByAuthor(@RequestBody int authorId) {
-        return serviceMusic.getMusicByAuthor(authorId);
+    public ResultDto getMusicByAuthor(@RequestParam(value = "user_id") int user_id) {
+        return serviceMusic.getMusicByAuthor(user_id);
     }
 
     @RequestMapping("/savemusic")
@@ -42,19 +40,29 @@ public class MusicController {
         return serviceMusic.saveMusic(music);
     }
 
+    @RequestMapping(value = "/upfile", method = RequestMethod.POST)
+    public ResultDto upFile(@RequestParam("file") MultipartFile file) {
+        return serviceMusic.upFile(file);
+    }
+
     @RequestMapping("/collection")
-    public ResultDto collectionMusic(@RequestBody int songId) {
-        return serviceMusic.collectionMusic(songId);
+    public ResultDto collectionMusic(@RequestParam(value = "song_id") int song_id) {
+        return serviceMusic.collectionMusic(song_id);
     }
 
     @RequestMapping("/dislike")
-    public ResultDto dislikeMusic(@RequestBody int songId) {
-        return serviceMusic.dislikeMusic(songId);
+    public ResultDto dislikeMusic(@RequestParam(value = "song_id") int song_id) {
+        return serviceMusic.dislikeMusic(song_id);
     }
 
     @RequestMapping("/deletemusic")
     public ResultDto deleteMusic(@RequestBody int songId) {
         return serviceMusic.deleteMusic(songId);
+    }
+
+    @RequestMapping("/getbestmusic")
+    public ResultDto getBestMusic() {
+        return serviceMusic.getBestMusic();
     }
 
 }

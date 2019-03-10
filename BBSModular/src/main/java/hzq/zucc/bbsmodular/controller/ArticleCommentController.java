@@ -4,10 +4,7 @@ import hzq.zucc.bbsmodular.domain.ArticleCommentDto;
 import hzq.zucc.bbsmodular.service.ArticleCommentService;
 import hzq.zucc.bbsmodular.util.ResultDto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Auther: 何圳青
@@ -23,7 +20,7 @@ public class ArticleCommentController {
     private ArticleCommentService articleCommentService;
 
     @RequestMapping("/getcommentbyarticle")
-    public ResultDto getCommentByArticle(@RequestBody int articleId){
+    public ResultDto getCommentByArticle(@RequestParam("article_id") int articleId){
         return articleCommentService.getCommentByArticle(articleId);
     }
 
@@ -38,7 +35,7 @@ public class ArticleCommentController {
     }
 
     @RequestMapping("/deletecomment")
-    public ResultDto deleteComment(@RequestBody int commentId){
+    public ResultDto deleteComment(@RequestParam("comment_id") int commentId){
         return articleCommentService.deleteComment(commentId);
     }
 

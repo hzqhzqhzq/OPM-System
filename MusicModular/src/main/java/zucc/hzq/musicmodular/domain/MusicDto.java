@@ -20,6 +20,8 @@ public class MusicDto implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int songId;
+    @Column(name = "song_info", nullable = false)
+    private String songInfo;
     @Column(name = "song_name", nullable = false)
     private String songName;
     @Column(name = "author_id", nullable = false)
@@ -49,6 +51,14 @@ public class MusicDto implements Serializable {
 
     public void setSongId(int songId) {
         this.songId = songId;
+    }
+
+    public String getSongInfo() {
+        return songInfo;
+    }
+
+    public void setSongInfo(String songInfo) {
+        this.songInfo = songInfo;
     }
 
     public String getSongName() {

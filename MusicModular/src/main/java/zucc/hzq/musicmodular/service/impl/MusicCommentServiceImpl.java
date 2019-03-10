@@ -27,24 +27,24 @@ public class MusicCommentServiceImpl implements MusicCommentService {
 
     @Override
     public ResultDto getMusicCommentByMusicId(int songId) {
-        return ResultDtoFactory.toAck("评论搜索成功！", musicCommentRepositoryDao.findById(new Long((long) songId)));
+        return ResultDtoFactory.toAck("评论搜索成功！", musicCommentRepositoryDao.findByMusicId(songId));
     }
 
     @Override
     public ResultDto saveComment(MusicCommentDto musicCommentDto) {
         musicCommentDto.setCreateTime(new Timestamp(date.getTime()));
         musicCommentRepositoryDao.save(musicCommentDto);
-        return ResultDtoFactory.toAck("保存评论成功");
+        return ResultDtoFactory.toAck("保存评论成功", musicCommentRepositoryDao.findByMusicId(musicCommentDto.getMusicId()));
     }
 
     @Override
     public ResultDto deleteComment(int commentId) {
-        Optional<MusicCommentDto> musicComment = musicCommentRepositoryDao.findById(new Long((long)commentId));
-        if (musicComment.get() == null) {
+        MusicCommentDto musicComment = musicCommentRepositoryDao.findByCommentId(commentId);
+        if (musicComment == null) {
             return ResultDtoFactory.toNack("没有该条评论信息");
         } else {
-            musicComment.get().setDeleteTime(new Timestamp(date.getTime()));
-            musicCommentRepositoryDao.save(musicComment.get());
+            musicComment.setDeleteTime(new Timestamp(date.getTime()));
+            musicCommentRepositoryDao.save(musicComment);
             return ResultDtoFactory.toAck("删除评论成功");
         }
     }

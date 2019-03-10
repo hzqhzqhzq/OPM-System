@@ -15,4 +15,5 @@ public interface ArticleService {
     ResultDto saveArticle(ArticleDto article);
     ResultDto updateArticle(ArticleDto article);
     ResultDto deleteArticle(int articleId);
+    ResultDto getArticleById(int articleId);
 }

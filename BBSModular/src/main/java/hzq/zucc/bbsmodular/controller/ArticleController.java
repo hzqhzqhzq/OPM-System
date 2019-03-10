@@ -4,10 +4,7 @@ import hzq.zucc.bbsmodular.domain.ArticleDto;
 import hzq.zucc.bbsmodular.service.ArticleService;
 import hzq.zucc.bbsmodular.util.ResultDto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Auther: 何圳青
@@ -28,7 +25,7 @@ public class ArticleController {
     }
 
     @RequestMapping("/getarticlebyauthor")
-    public ResultDto getArticleByAuthor(@RequestBody int authorId){
+    public ResultDto getArticleByAuthor(@RequestParam("user_id") int authorId){
         return articleService.getArticleByAuthor(authorId);
     }
 
@@ -43,7 +40,12 @@ public class ArticleController {
     }
 
     @RequestMapping("/deletearticle")
-    public ResultDto deleteArticle(@RequestBody int articleId){
+    public ResultDto deleteArticle(@RequestParam("user_id") int articleId){
         return articleService.deleteArticle(articleId);
+    }
+
+    @RequestMapping("/getarticlebyid")
+    public ResultDto getArticleById(@RequestParam("article_id") int articleId) {
+        return articleService.getArticleById(articleId);
     }
 }

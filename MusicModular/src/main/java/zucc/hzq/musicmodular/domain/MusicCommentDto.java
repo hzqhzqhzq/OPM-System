@@ -17,14 +17,14 @@ public class MusicCommentDto implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int commentsId;
+    private int commentId;
     @Column(name = "user_id", nullable = false)
     private int userId;
     @Column(name = "user_name", nullable = false)
     private String userName;
     @Column(name = "to_user_id", nullable = false)
     private int toUserId;
-    @Column(name = "to_user_name", nullable = false)
+    @Column(name = "to_user_name", nullable = true)
     private String toUserName;
     @Column(name = "music_id", nullable = false)
     private int musicId;
@@ -32,21 +32,21 @@ public class MusicCommentDto implements Serializable {
     private String comments;
     @Column(name = "create_time", nullable = false)
     private Date createTime;
-    @Column(name = "update_time", nullable = false)
+    @Column(name = "update_time", nullable = true)
     private Date updateTime;
-    @Column(name = "delete_time", nullable = false)
+    @Column(name = "delete_time", nullable = true)
     private Date deleteTime;
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }
 
-    public int getCommentsId() {
-        return commentsId;
+    public int getCommentId() {
+        return commentId;
     }
 
-    public void setCommentsId(int commentsId) {
-        this.commentsId = commentsId;
+    public void setCommentId(int commentId) {
+        this.commentId = commentId;
     }
 
     public int getUserId() {

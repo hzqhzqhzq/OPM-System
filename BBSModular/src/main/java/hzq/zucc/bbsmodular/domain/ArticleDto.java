@@ -23,8 +23,10 @@ public class ArticleDto implements Serializable {
     private String title;
     @Column(name = "content", nullable = false)
     private String content;
-    @Column(name = "author_id", nullable = false)
-    private int authorId;
+    @Column(name = "user_name", nullable = false)
+    private String userName;
+    @Column(name = "user_id", nullable = false)
+    private int userId;
     @Column(name = "read_num", nullable = false)
     private int readNum;
     @Column(name = "reply_num", nullable = false)
@@ -64,12 +66,12 @@ public class ArticleDto implements Serializable {
         this.content = content;
     }
 
-    public int getAuthorId() {
-        return authorId;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setAuthorId(int authorId) {
-        this.authorId = authorId;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public int getReadNum() {
@@ -110,5 +112,13 @@ public class ArticleDto implements Serializable {
 
     public void setDeleteTime(Date deleteTime) {
         this.deleteTime = deleteTime;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 }

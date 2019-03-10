@@ -2,10 +2,7 @@ package zucc.hzq.feign.zcontroller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import zucc.hzq.feign.service.ServiceArticleComment;
 import zucc.hzq.feign.util.ResultDto;
 
@@ -25,7 +22,7 @@ public class ArticleCommentController {
     private ServiceArticleComment serviceArticleComment;
 
     @RequestMapping("/getcommentbyarticle")
-    public ResultDto getCommentByArticle(@RequestBody int articleId){
+    public ResultDto getCommentByArticle(@RequestParam("article_id") int articleId){
         return serviceArticleComment.getCommentByArticle(articleId);
     }
 
@@ -40,7 +37,7 @@ public class ArticleCommentController {
     }
 
     @RequestMapping("/deletecomment")
-    public ResultDto deleteComment(@RequestBody int commentId){
+    public ResultDto deleteComment(@RequestParam("comment_id") int commentId){
         return serviceArticleComment.deleteComment(commentId);
     }
 

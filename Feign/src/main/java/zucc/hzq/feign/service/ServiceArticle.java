@@ -3,6 +3,7 @@ package zucc.hzq.feign.service;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import zucc.hzq.feign.util.ResultDto;
 
 /**
@@ -18,7 +19,7 @@ public interface ServiceArticle {
     ResultDto getAllArticle();
 
     @RequestMapping("/getarticlebyauthor")
-    ResultDto getArticleByAuthor(@RequestBody int authorId);
+    ResultDto getArticleByAuthor(@RequestParam("user_id") int authorId);
     @RequestMapping("/savearticle")
     ResultDto saveArticle(@RequestBody Object article);
 
@@ -26,6 +27,9 @@ public interface ServiceArticle {
     ResultDto updateArticle(@RequestBody Object article);
 
     @RequestMapping("/deletearticle")
-    ResultDto deleteArticle(@RequestBody int articleId);
+    ResultDto deleteArticle(@RequestParam("user_id") int articleId);
+
+    @RequestMapping("/getarticlebyid")
+    ResultDto getArticleById(@RequestParam("article_id") int articleId);
 
 }

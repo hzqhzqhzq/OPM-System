@@ -23,10 +23,14 @@ public class ArticleCommentDto implements Serializable {
     private int articleId;
     @Column(name = "user_id", nullable = false)
     private int userId;
+    @Column(name = "user_name", nullable = false)
+    private String userName;
     @Column(name = "comment", nullable = false)
     private String comment;
     @Column(name = "to_user_id", nullable = false)
     private int toUserId;
+    @Column(name = "to_user_name", nullable = false)
+    private String toUserName;
     @Column(name = "create_time", nullable = false)
     private Date createTime;
     @Column(name = "update_time", nullable = false)
@@ -100,5 +104,21 @@ public class ArticleCommentDto implements Serializable {
 
     public void setDeleteTime(Date deleteTime) {
         this.deleteTime = deleteTime;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getToUserName() {
+        return toUserName;
+    }
+
+    public void setToUserName(String toUserName) {
+        this.toUserName = toUserName;
     }
 }

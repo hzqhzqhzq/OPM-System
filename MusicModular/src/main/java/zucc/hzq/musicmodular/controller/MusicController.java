@@ -1,10 +1,8 @@
 package zucc.hzq.musicmodular.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import zucc.hzq.musicmodular.domain.MusicDto;
 import zucc.hzq.musicmodular.service.MusicService;
 import zucc.hzq.musicmodular.util.ResultDto;
@@ -31,13 +29,18 @@ public class MusicController {
     }
 
     @RequestMapping("/getmusicbyid")
-    public ResultDto getMusicById(@RequestBody int songId) {
+    public ResultDto getMusicById(@RequestParam(value = "song_id") int songId) {
         return musicService.getMusicById(songId);
     }
 
     @RequestMapping("/getmusicbyauthor")
-    public ResultDto getMusicByAuthor(@RequestBody int authorId) {
+    public ResultDto getMusicByAuthor(@RequestParam(value = "user_id") int authorId) {
         return musicService.getMusicByAuthorId(authorId);
+    }
+
+    @RequestMapping(value = "/upfile", method = RequestMethod.POST)
+    public ResultDto upMusic(@RequestParam("file")MultipartFile file) {
+        return musicService.upFile(file);
     }
 
     @RequestMapping("/savemusic")
@@ -46,18 +49,23 @@ public class MusicController {
     }
 
     @RequestMapping("/collection")
-    public ResultDto collectionMusic(@RequestBody int songId) {
+    public ResultDto collectionMusic(@RequestParam(value = "song_id") int songId) {
         return musicService.collectionMusic(songId);
     }
 
     @RequestMapping("/dislike")
-    public ResultDto dislikeMusic(@RequestBody int songId) {
+    public ResultDto dislikeMusic(@RequestParam(value = "song_id") int songId) {
         return musicService.dislikeMusic(songId);
     }
 
     @RequestMapping("/deletemusic")
     public ResultDto deleteMusic(@RequestBody int songId) {
         return musicService.deleteMusic(songId);
+    }
+
+    @RequestMapping("/getbestmusic")
+    public ResultDto getBestMusic() {
+        return musicService.getBestMusic();
     }
 
 }
