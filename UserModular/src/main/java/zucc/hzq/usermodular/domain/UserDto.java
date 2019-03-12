@@ -28,6 +28,16 @@ public class UserDto implements Serializable {
     private String userSex;
     @Column(name = "user_city", nullable = false)
     private String userCity;
+
+    @Column(name = "age", nullable = false)
+    private int age;
+    @Column(name = "phone", nullable = false)
+    private String phone;
+    @Column(name = "professional", nullable = false)
+    private String professional;
+    @Column(name = "birthday", nullable = false)
+    private Date birthday;
+
     @Column(name = "create_time", nullable = false)
     private Date createTime;
     @Column(name = "update_time", nullable = false)
@@ -109,5 +119,37 @@ public class UserDto implements Serializable {
 
     public void setDeleteTime(Date deleteTime) {
         this.deleteTime = deleteTime;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getProfessional() {
+        return professional;
+    }
+
+    public void setProfessional(String professional) {
+        this.professional = professional;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
 }
