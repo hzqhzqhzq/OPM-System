@@ -92,13 +92,14 @@ public class MusicServiceImpl implements MusicService {
     @Override
     public ResultDto upFile(MultipartFile file) {
         String fileName = file.getOriginalFilename();
-        String path = "C:/IDEAWorkspace/UI/FriendFinder/music/";
+//        String path = "C:/IDEAWorkspace/UI/FriendFinder/music/";
 //        String path = "/home/workspace/web_index/music/";
+        String path = "D:/myworkspace/test_UI/music/";
         System.out.println(fileName);
         File newFile = new File(path + fileName);
         try {
             file.transferTo(newFile);
-            return ResultDtoFactory.toAck("保存音乐成功");
+            return ResultDtoFactory.toAck("上传成功");
         } catch (IOException e) {
             e.printStackTrace();
             return ResultDtoFactory.toNack("上传失败");
