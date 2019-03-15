@@ -32,4 +32,6 @@ public interface ServiceArticle {
     @RequestMapping("/getarticlebyid")
     ResultDto getArticleById(@RequestParam("article_id") int articleId);
 
+    @RequestMapping("/addreply")
+    ResultDto addReply(@RequestParam("article_id") int articleId);
 }

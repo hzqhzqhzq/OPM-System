@@ -62,6 +62,17 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public ResultDto getArticleById(int articleId) {
-        return ResultDtoFactory.toAck("获取成功",articleRepositoryDao.findByArticleId(articleId));
+        ArticleDto result = articleRepositoryDao.findByArticleId(articleId);
+        result.setReadNum(result.getReadNum() + 1);
+        articleRepositoryDao.save(result);
+        return ResultDtoFactory.toAck("获取成功",result);
+    }
+
+    @Override
+    public ResultDto addReply(int articleId) {
+        ArticleDto result = articleRepositoryDao.findByArticleId(articleId);
+        result.setReplyNum(result.getReplyNum() + 1);
+        articleRepositoryDao.save(result);
+        return ResultDtoFactory.toAck("增加成功",result);
     }
 }

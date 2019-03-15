@@ -38,6 +38,9 @@ public class ArticleDto implements Serializable {
     @Column(name = "delete_time", nullable = false)
     private Date deleteTime;
 
+    @Column(name = "type", nullable = false)
+    private String type;
+
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }
@@ -120,5 +123,13 @@ public class ArticleDto implements Serializable {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }

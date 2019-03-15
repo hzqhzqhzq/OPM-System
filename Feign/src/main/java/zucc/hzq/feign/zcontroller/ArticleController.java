@@ -50,4 +50,9 @@ public class ArticleController {
     public ResultDto getArticleById(@RequestParam("article_id") int articleId){
         return serviceArticle.getArticleById(articleId);
     }
+    @RequestMapping("/addreply")
+    public ResultDto addReply(@RequestParam("article_id") int articleId){
+        return serviceArticle.addReply(articleId);
+    }
+
 }

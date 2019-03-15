@@ -16,4 +16,6 @@ public interface ArticleService {
     ResultDto updateArticle(ArticleDto article);
     ResultDto deleteArticle(int articleId);
     ResultDto getArticleById(int articleId);
+
+    ResultDto addReply(int articleId);
 }
