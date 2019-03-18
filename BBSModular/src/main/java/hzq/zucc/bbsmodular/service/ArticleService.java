@@ -18,4 +18,5 @@ public interface ArticleService {
     ResultDto getArticleById(int articleId);
 
     ResultDto addReply(int articleId);
+    ResultDto searchArticle(String search);
 }

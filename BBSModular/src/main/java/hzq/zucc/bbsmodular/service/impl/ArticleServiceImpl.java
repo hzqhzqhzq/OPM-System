@@ -75,4 +75,14 @@ public class ArticleServiceImpl implements ArticleService {
         articleRepositoryDao.save(result);
         return ResultDtoFactory.toAck("增加成功",result);
     }
+
+    @Override
+    public ResultDto searchArticle(String search) {
+        List<ArticleDto> result = articleRepositoryDao.findAllByTitleLikeOrContentLikeOrUserNameLikeOrTypeLike(search, search, search, search);
+        if (result == null) {
+            return ResultDtoFactory.toAck("无搜索结果");
+        } else {
+            return ResultDtoFactory.toAck("搜索成功", result);
+        }
+    }
 }

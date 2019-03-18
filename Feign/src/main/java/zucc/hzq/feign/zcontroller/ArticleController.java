@@ -55,4 +55,9 @@ public class ArticleController {
         return serviceArticle.addReply(articleId);
     }
 
+    @RequestMapping("/searcharticle")
+    public ResultDto searchArticle(@RequestParam("seacher") String searcher){
+        return serviceArticle.searchArticle(searcher);
+    }
+
 }

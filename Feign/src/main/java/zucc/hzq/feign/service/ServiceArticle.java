@@ -20,6 +20,7 @@ public interface ServiceArticle {
 
     @RequestMapping("/getarticlebyauthor")
     ResultDto getArticleByAuthor(@RequestParam("user_id") int authorId);
+
     @RequestMapping("/savearticle")
     ResultDto saveArticle(@RequestBody Object article);
 
@@ -34,4 +35,7 @@ public interface ServiceArticle {
 
     @RequestMapping("/addreply")
     ResultDto addReply(@RequestParam("article_id") int articleId);
+
+    @RequestMapping("/searcharticle")
+    ResultDto searchArticle(@RequestParam("seacher") String searcher);
 }

@@ -53,4 +53,9 @@ public class ArticleController {
     public ResultDto addReply(@RequestParam("article_id") int articleId) {
         return articleService.addReply(articleId);
     }
+
+    @RequestMapping("/searcharticle")
+    public ResultDto search(@RequestParam("seacher") String seacher) {
+        return articleService.searchArticle(seacher);
+    }
 }

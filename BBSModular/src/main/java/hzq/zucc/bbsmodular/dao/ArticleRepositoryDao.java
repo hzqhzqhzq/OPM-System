@@ -14,4 +14,5 @@ import java.util.List;
 public interface ArticleRepositoryDao extends JpaRepository<ArticleDto, Long> {
     List<ArticleDto> findByUserId(int authorId);
     ArticleDto findByArticleId(int articleId);
+    List<ArticleDto> findAllByTitleLikeOrContentLikeOrUserNameLikeOrTypeLike(String title, String content, String userName, String type);
 }
