@@ -56,7 +56,7 @@ public class MusicController {
     }
 
     @RequestMapping("/deletemusic")
-    public ResultDto deleteMusic(@RequestBody int songId) {
+    public ResultDto deleteMusic(@RequestParam(value = "song_id") int songId) {
         return serviceMusic.deleteMusic(songId);
     }
 

@@ -39,7 +39,7 @@ public interface ServiceMusic {
     ResultDto dislikeMusic(@RequestParam(value = "song_id") int songId);
 
     @RequestMapping("/deletemusic")
-    ResultDto deleteMusic(@RequestBody int songId);
+    ResultDto deleteMusic(@RequestParam(value = "song_id") int songId);
 
     @RequestMapping("/getbestmusic")
     ResultDto getBestMusic();

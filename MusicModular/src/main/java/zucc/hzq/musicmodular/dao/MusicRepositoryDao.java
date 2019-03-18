@@ -14,8 +14,11 @@ import java.util.List;
  * @Modified By:
  */
 public interface MusicRepositoryDao extends JpaRepository<MusicDto, Long> {
-    List<MusicDto> findByAuthorId(int authorId);
+    List<MusicDto> findByAuthorIdAndDeleteTimeIsNull(int authorId);
+
     MusicDto findBySongId(int songId);
+
+    List<MusicDto> findAllByDeleteTimeIsNull();
 
     @Query(value = "select o.* from song_info o order by collection desc limit 3", nativeQuery = true)
     @Modifying

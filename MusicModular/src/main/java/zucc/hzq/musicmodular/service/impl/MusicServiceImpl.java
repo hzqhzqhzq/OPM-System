@@ -31,7 +31,7 @@ public class MusicServiceImpl implements MusicService {
 
     @Override
     public ResultDto getAllMusic() {
-        List<MusicDto> returnMusic = musicRepositoryDao.findAll();
+        List<MusicDto> returnMusic = musicRepositoryDao.findAllByDeleteTimeIsNull();
 
         return ResultDtoFactory.toAck("所有音乐获取成功！", returnMusic);
     }
@@ -48,7 +48,7 @@ public class MusicServiceImpl implements MusicService {
 
     @Override
     public ResultDto getMusicByAuthorId(int userId) {
-        List<MusicDto> music = musicRepositoryDao.findByAuthorId(userId);
+        List<MusicDto> music = musicRepositoryDao.findByAuthorIdAndDeleteTimeIsNull(userId);
         if (music == null){
             return ResultDtoFactory.toNack("没有该音乐");
         } else {
@@ -93,8 +93,8 @@ public class MusicServiceImpl implements MusicService {
     public ResultDto upFile(MultipartFile file) {
         String fileName = file.getOriginalFilename();
 //        String path = "C:/IDEAWorkspace/UI/FriendFinder/music/";
-//        String path = "/home/workspace/web_index/music/";
-        String path = "D:/myworkspace/test_UI/music/";
+        String path = "/home/workspace/web_index/music/";
+//        String path = "D:/myworkspace/test_UI/music/";
         System.out.println(fileName);
         File newFile = new File(path + fileName);
         try {
