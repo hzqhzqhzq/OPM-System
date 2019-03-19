@@ -29,13 +29,13 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public ResultDto getAllArticle() {
-        List<ArticleDto> result = articleRepositoryDao.findAll();
+        List<ArticleDto> result = articleRepositoryDao.findAllByDeleteTimeIsNull();
         return ResultDtoFactory.toAck("获取文章成功", result);
     }
 
     @Override
     public ResultDto getArticleByAuthor(int authorId) {
-        List<ArticleDto> result = articleRepositoryDao.findByUserId(authorId);
+        List<ArticleDto> result = articleRepositoryDao.findAllByUserIdAndDeleteTimeIsNull(authorId);
         return ResultDtoFactory.toAck("获取文章成功", result);
     }
 
@@ -48,15 +48,20 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public ResultDto updateArticle(ArticleDto article) {
-        article.setUpdateTime(new Timestamp(date.getTime()));
-        articleRepositoryDao.save(article);
-        return ResultDtoFactory.toAck("修改文章成功", article);
+        ArticleDto result = articleRepositoryDao.findByArticleId(article.getArticleId());
+        result.setTitle(article.getTitle());
+        result.setContent(article.getContent());
+        result.setType(article.getType());
+        result.setUpdateTime(new Timestamp(date.getTime()));
+        articleRepositoryDao.save(result);
+        return ResultDtoFactory.toAck("修改文章成功", result);
     }
 
     @Override
     public ResultDto deleteArticle(int articleId) {
         ArticleDto article = articleRepositoryDao.findByArticleId(articleId);
         article.setDeleteTime(new Timestamp(date.getTime()));
+        articleRepositoryDao.save(article);
         return ResultDtoFactory.toAck("删除成功", article);
     }
 
@@ -80,7 +85,7 @@ public class ArticleServiceImpl implements ArticleService {
     public ResultDto searchArticle(String search) {
         List<ArticleDto> result = articleRepositoryDao.findAllByTitleLikeOrContentLikeOrUserNameLikeOrTypeLike(search, search, search, search);
         if (result == null) {
-            return ResultDtoFactory.toAck("无搜索结果");
+            return ResultDtoFactory.toNack("无搜索结果");
         } else {
             return ResultDtoFactory.toAck("搜索成功", result);
         }

@@ -42,7 +42,7 @@ public class ArticleController {
     }
 
     @RequestMapping("/deletearticle")
-    public ResultDto deleteArticle(@RequestParam("user_id") int articleId){
+    public ResultDto deleteArticle(@RequestParam("article_id") int articleId){
         return serviceArticle.deleteArticle(articleId);
     }
 
